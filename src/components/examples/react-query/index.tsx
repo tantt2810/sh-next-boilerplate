@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 
 /**
  * This component is generated as an example for useQuery hook
@@ -11,7 +11,7 @@ const API_URL = "https://random-data-api.com/api/users/random_user";
 
 export const ReactQueryExample = () => {
     const { data, refetch } = useQuery(
-        "repoData",
+        ["repoData"],
         () => fetch(API_URL).then((res) => res.json()),
         {
             refetchOnWindowFocus: false,

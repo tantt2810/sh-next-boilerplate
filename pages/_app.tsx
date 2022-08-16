@@ -1,9 +1,12 @@
-import { createTheme, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import store from "@redux/store";
 import "@styles/global.scss";
+import {
+    Hydrate,
+    QueryClient,
+    QueryClientProvider,
+} from "@tanstack/react-query";
 import { AppProps } from "next/app";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { Hydrate } from "react-query/hydration";
 import { Provider } from "react-redux";
 import { theme } from "src/theme";
 import "tailwindcss/tailwind.css";
