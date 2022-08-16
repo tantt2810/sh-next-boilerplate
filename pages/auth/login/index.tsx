@@ -1,17 +1,6 @@
-import { Button, Card, CardContent, Container, Stack } from "@mui/material";
+import { SHButton } from "@components/ui-system/button";
 
 export const Login = () => {
-    return (
-        <Container>
-            <Card sx={{ maxWidth: 500 }}>
-                <CardContent>
-                    <Stack spacing={2}>
-                        <Button variant="contained">MUI Button</Button>
-                        <Button variant="outlined">MUI Button</Button>
-                    </Stack>
-                </CardContent>
-            </Card>
-        </Container>
-    );
+    return <SHButton variant="contained">MUI Button</SHButton>;
 };
 export default Login;
