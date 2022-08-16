@@ -1,6 +1,6 @@
 import { ImageList, ImageListProps } from "@mui/material";
 
-export interface ISHImageListProps extends ImageListProps {}
-export const SHImageList = (props: ISHImageListProps) => (
+export type SHImageListProps = ImageListProps;
+export const SHImageList = (props: SHImageListProps): JSX.Element => (
     <ImageList {...props} />
 );

@@ -11,8 +11,8 @@
         "build:analyze": "ANALYZE=true npm run build",
         "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'",
-        "test": "jest -c test/jest.config.js",
-        "coverage": "jest -c test/jest.config.js --coverage",
+        "test": "jest -c test/jest.config.js --passWithNoTests",
+        "test:coverage": "jest -c test/jest.config.js --passWithNoTests --coverage",
         "cypress:open": "cypress open",
         "cypress:run": "cypress run --config video=false",
         "cypress:test": "start-server-and-test start http://localhost:3000 cypress:run"

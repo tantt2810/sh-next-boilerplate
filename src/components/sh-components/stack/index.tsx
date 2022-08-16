@@ -1,4 +1,6 @@
 import { Stack, StackProps } from "@mui/material";
 
-export interface ISHStackProps extends StackProps {}
-export const SHStack = (props: ISHStackProps) => <Stack {...props} />;
+export type SHStackProps = StackProps;
+export const SHStack = (props: SHStackProps): JSX.Element => (
+    <Stack {...props} />
+);

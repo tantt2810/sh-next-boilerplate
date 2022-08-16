@@ -1,6 +1,6 @@
 import { Container, ContainerProps } from "@mui/material";
 
-export interface ISHContainerProps extends ContainerProps {}
-export const SHContainer = (props: ISHContainerProps) => (
+export type SHContainerProps = ContainerProps;
+export const SHContainer = (props: SHContainerProps): JSX.Element => (
     <Container {...props} />
 );

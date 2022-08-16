@@ -15,6 +15,14 @@
         "browser": true,
         "amd": true
     },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
+    },
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",

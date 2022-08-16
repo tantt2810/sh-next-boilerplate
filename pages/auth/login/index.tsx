@@ -1,6 +1,6 @@
 import { SHButton } from "@components/sh-components";
 
-export const Login = () => {
+export const Login = (): JSX.Element => {
     return (
         <>
             <SHButton variant="contained" color="primary">

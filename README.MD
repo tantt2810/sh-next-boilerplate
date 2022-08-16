@@ -1,4 +1,4 @@
-# suitability-hub
+# Suitability Hub
 
 ## Available Scripts
 
