@@ -1,4 +1,4 @@
-import { createTheme, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import store from "@redux/store";
 import "@styles/global.scss";
 import { AppProps } from "next/app";

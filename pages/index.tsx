@@ -1,17 +1,11 @@
+import { SHTypography } from "@components/sh-components";
 import React from "react";
-
-import { Cards, Container, Footer, Header, Main } from "@components";
-import { ReactQueryExample } from "@components/examples/react-query";
 
 const Home: React.FC = () => {
     return (
-        <Container>
-            <ReactQueryExample />
-            <Header />
-            <Main />
-            <Cards />
-            <Footer />
-        </Container>
+        <SHTypography variant="h1" color={"primary"}>
+            Wellcome to the party
+        </SHTypography>
     );
 };
 
