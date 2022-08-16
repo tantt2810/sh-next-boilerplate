@@ -1,13 +1,13 @@
-import React, { ReactElement } from "react";
 import {
     render as baseRender,
     RenderOptions,
     RenderResult,
 } from "@testing-library/react";
+import { ReactElement } from "react";
 
-import { QueryClient, QueryClientProvider } from "react-query";
-import { Provider } from "react-redux";
 import store from "@redux/store";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Provider } from "react-redux";
 
 /**
  * Custom renderer example with @testing-library/react
@@ -34,6 +34,5 @@ const render = (ui: ReactElement, options?: Omit<RenderOptions, "queries">) =>
 
 // re-export everything
 export * from "@testing-library/react";
-
 // override render method
 export { render };
